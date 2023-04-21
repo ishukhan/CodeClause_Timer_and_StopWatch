@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/image/favicon.ico" type="image/x-icon">
+    <title>Timer and StopWatch</title>
+    <!-- Custome css file -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ================================ TIME ===================================== -->
+    <div class="header">
+        <h1>CodeClause Project</h1>
+        <span>Digital clock with Timer and StopWatch</span>
+    </div>
+    <div class="outer_wrapper">
+        <p class="type">clock</p>
+        <div class="Container  ">
+            <div class="clock_style">
+                <div class="wrapper">
+                    <div class="clock">
+                        <div class="hour">
+                            <p class="number" id="hour">02</p>
+                            <p class="text">Hours</p>
+                        </div>
+                        <p class="colon">:</p>
+                        <div class="Min">
+                            <p class="number" id="mint">16</p>
+                            <p class="text">Minutes</p>
+                        </div>
+                        <p class="colon">:</p>
+                        <div class="Sec">
+                            <p class="number" id="second">20</p>
+                            <p class="text">Second</p>
+                        </div>
+                        <p class="colon">:</p>
+                        <div class="ampm">
+                            <p class="number" id="ampm">AM</p>
+                            <p class=" text" id="other_ampm">PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="btns">
+                    <button class="btn timer_btn">Timer</button>
+                    <button class="btn stopWatch_btn">StopWatch</button>
+                </div>
+            </div>
+        </div>
+        <!-- ================================ STOPWATCH ====================================== -->
+        <div class="Container stop_watch hidden">
+            <!-- <p class="type">StopWatch</p> -->
+            <div class="stopWatch">
+                <span class="digits" id="hr">00</span>
+                <span class="text">Hr</span>
+                <span class="digits" id="min">00</span>
+                <span class="text">Min</span>
+                <span class="digits" id="sec">00</span>
+                <span class="text">Sec</span>
+                <span class="digit" id="count">
+                    00</span>
+            </div>
+
+            <div class="laps">
+                <!-- <div class="lap active">
+                <p>lap 1</p>
+                <p>00:00</p>
+            </div>
+            <div class="lap">
+                <p>lap 1</p>
+                <p>00:00</p>
+            </div> -->
+            </div>
+
+            <div id="btns">
+                <button class="btn" id="start">
+                    Start</button>
+                <button class="btn hidden" id="lap">
+                    lap</button>
+                <button class="btn" id="reset">
+                    Reset</button>
+                <button class="btn back_btn" id="Back">
+                    Back</button>
+            </div>
+        </div>
+
+        <!-- ================================ timer =================================== -->
+        <div class="Container timer_ hidden">
+            <!-- <p class="type">Timer</p> -->
+            <div class="timer_style">
+                <div class="wrapper">
+                    <div class="clock">
+                        <div class="hour">
+                            <p class="number" id="time_hour">00</p>
+                            <p class="text">Hours</p>
+                        </div>
+                        <p class="colon">:</p>
+                        <div class="Min">
+                            <p class="number" id="time_mint">00</p>
+                            <p class="text">Minutes</p>
+                        </div>
+                        <p class="colon">:</p>
+                        <div class="Sec">
+                            <p class="number" id="time_second">00</p>
+                            <p class="text">Second</p>
+                        </div>
+                        <div class="miliSec">
+                            <p class="number" id="time_MiliSecond">00</p>
+                            <p class="text">miliSecond</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="btns">
+                    <button class="btn start_timer" id="start">
+                        Start</button>
+                    <button class="btn stop_timer hidden" id="stop">
+                        Stop</button>
+                    <button class="btn reset_timer" id="reset">
+                        Reset</button>
+                    <button class="btn back_btn" id="Back">
+                        Back</button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <!-- Custome js file -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

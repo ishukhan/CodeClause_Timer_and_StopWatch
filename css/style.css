@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+
+/* import Css variable */
+@import url(/css/partial/_variable.css);
+
+
+
+.Container {
+    width: 100vw;
+    max-width: 800px;
+    border-radius: 10px;
+    color: #fff;
+
+}
+.type{
+    padding: 5px 30px;
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #ffffff62;
+}
+
+.header {
+    padding: 10px 50px;
+    margin: 20px;
+}
+
+h1 {
+    font-size: 10px;
+    font-weight: 500;
+    color: #ffffff62;
+    text-transform: uppercase;
+
+}
+
+span {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+
+.stopWatch {
+    padding: 30px 0;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    margin-top: 30px;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.stopWatch:hover {
+    box-shadow: none;
+}
+
+.digits {
+    text-align: center;
+    font-size: 50px;
+    color: #fff;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.text {
+    font-size: 20px;
+    color:#000;
+    text-transform: uppercase;
+}
+
+#count {
+    position: relative;
+    top: -50px;
+    left: 30px;
+    font-size: 15px;
+}
+
+
+#btns {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    border: none;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+
+.btn:active {
+    box-shadow: none;
+}
+
+.laps{
+    position: relative;
+    max-height: 100px;
+    overflow-y: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.laps .lap{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.laps .lap.active p{
+    color: #9af545;
+    font-weight: 800;
+}
+
+.wrapper {
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    margin-top: 15px;
+    text-align: center;
+    transition: all 0.3s;
+    line-height: 0.1;
+}
+
+.wrapper:hover {
+    box-shadow: none;
+}
+
+.clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.clock div {
+    width: 20%;
+    text-align: center;
+}
+
+.number {
+    font-size: 50px;
+    color: #fffcd6;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.colon {
+    font-size: 30px;
+}
+
+.hidden{
+    display: none;
+}
+
+
+@media screen and (max-width:768px) {
+    .digits {
+        font-size: 50px;
+    }
+    .text {
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    .stopWatch {
+        padding: 30px;
+        margin: 50px;
+    }
+
+    .wrapper {
+        padding: 15px;
+        margin: 50px;
+    }
+}
+
+@media screen and (max-width:530px) {
+    .header {
+        padding: unset;
+    }
+    h1 {
+        font-size: 9px;
+    }
+
+    span {
+        font-size: 11px;
+    }
+    .stopWatch {
+        padding: 15px;
+        margin: 26px;
+    }
+
+    .wrapper {
+        padding: 10px;
+        margin: 26px;
+    }
+
+    .clock {
+        gap: 3px;
+    }
+
+    .digits {
+        font-size: 25px;
+    }
+
+    .text {
+        font-size: 8px;
+      
+    }
+
+    #count {
+        display: none;
+    }
+
+    .btn {
+        padding: 8px 10px;
+    }
+
+    .clock .number {
+        font-size: 20px;
+    }
+}

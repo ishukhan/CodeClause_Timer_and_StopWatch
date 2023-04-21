@@ -1,0 +1,40 @@
+html,body{
+    margin: 0%;
+    box-sizing: border-box;
+    /* max-width: 800px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #eef1f6;
+    min-height: 100vh;
+    min-width: 100vw;
+    background: #6994c5;
+   
+}
+
+/* CSS variable */
+
+:root{
+    
+
+    --primary-color4:#eeeeee;
+    --secondry-color:#0c0c0c;
+    --primary-color2: #3c3f3f;
+
+
+    --primary-color: #4458dc;
+    --primary-color3:#99FF66;
+    --title-color:#141313;
+    --text-color:#777777;
+    --border-color:#201f1f17;
+    --gradient-color:linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+    --shadow-color:0px 10px 30px rgba(118,85,225,0.3);
+    --box-shadow:0px 10px 30px rgba(57,56,61,0.205);
+
+
+/* fontfamily variable */
+/* --roboto:'Roboto',cursive; */
+
+
+}
